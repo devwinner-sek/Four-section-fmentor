@@ -5,10 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 /*-------- Body style --------------- */
-body {
-  background-color: #fafafa;
-  color: green;
-}
+
 /*Body and global card*/
 .card-container, body {
   margin: 0;
