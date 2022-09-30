@@ -7,6 +7,12 @@
 /*-------- Body style --------------- */
 
 /*Body and global card*/
+
+body
+{
+  margin:0px;
+  height:100vh;
+}
 .card-container, body {
   margin: 0;
   padding: 0;
@@ -22,6 +28,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+    
+  
 }
 
 /*Card info start -------------------------------------------------*/
@@ -191,12 +199,44 @@
 /*Card center end -------------------------------------------------*/
 
 /*style for mobile device*/
-@media(min-width: 200px) and (max-width: 992px) {
 
-    .card-container, body {
-      text-align: center;
-      color: white;
-    }
+@media (max-width: 320px) {
+
+  .card-container
+  {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .card-item2, .card-item3, .card-item1, .card-item4
+  {
+    width: 88%;
+    margin-left: auto;
+  }
+  .card-item-center
+  {
+    width: 100%;
+  }
+  .card-content-item
+  {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;
+      padding-right: 1em;
+      padding-left: 1em;
+  }
+  .card-info
+   {
+     padding-top: 12em;
+   }
+  
+}
+
+@media(min-width: 321px) and (max-width: 992px) {
+   
     .card-container 
     {
       display: flex;
@@ -204,6 +244,27 @@
       justify-content: center; 
     }
 
+    .card-content-item
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;
+      width: 19.438em;
+    }
+    .card-item1, .card-item2, .card-item3, .card-item4
+    {
+      width: 311px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 992px) {
+
+    .card-container, body {
+      text-align: center;
+      color: white;
+    }
+    
     /*Card info  start ****************************************/
     .card-info 
     {
@@ -216,7 +277,6 @@
       margin-bottom: 15em;
       margin-top: 8em;
     }
-
     .card-description
     {
      text-align: center;
@@ -241,17 +301,9 @@
     /*Card info end ****************************************/
 
     /*Card content item start ****************************************/
-    .card-content-item
-    {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; 
-      align-items: center;
-      width: 19.438em;
-    }
+    
     .card-item1, .card-item2, .card-item3, .card-item4
     {
-      width: 311px;
       justify-content: flex-start;
       align-items: flex-start;
       margin-top: 25px;
@@ -280,6 +332,8 @@
     /*Card content item end ****************************************/
 
   }
+
+ 
 
 
 
